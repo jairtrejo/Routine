@@ -5,8 +5,8 @@ from indextank.client import ApiClient
 reader = csv.DictReader(open('US_POI_and_Business_Listings_(Beta).csv'),
                         delimiter = ',')
 
-api = ApiClient('http://:7MQ8kMr0p4zAXb@8ai5u.api.indextank.com')
-index = api.get_index('businesses')
+api = ApiClient('http://:indextank-api-key')
+index = api.get_index('index-name')
 
 categories = set()
 total = 0

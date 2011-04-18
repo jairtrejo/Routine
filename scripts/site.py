@@ -10,8 +10,8 @@ from sierpinski import Sierpinski
 class RoutineBackend(object):
 
     def __init__(self):
-        self.api = ApiClient('http://:7MQ8kMr0p4zAXb@8ai5u.api.indextank.com')
-        self.index = self.api.get_index('businesses')
+        self.api = ApiClient('http://indxtank-api-key')
+        self.index = self.api.get_index('index-name')
         self.sierpinski = Sierpinski('co.txt')
 
     @cherrypy.expose
