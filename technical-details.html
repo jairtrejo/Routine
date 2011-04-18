@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link media="all" href="css/zp-compressed.css" type="text/css" rel="stylesheet" />
+    <link href="css/zp-print.css" type="text/css" media="print" rel="stylesheet" />
+    <link media="all" href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>Routine :: Technical details</title>
+</head>
+<body>
+    <div class="zp-wrapper">
+        <div class="zp-100 content">
+            <h1>Routine</h1>
+            <hr/>
+            <p>
+                Routine was developed during the week from April 10 to April 17 as an entry for <a href='http://indextank.com'>Indextank</a> and <a href='http://www.factual.com'>Factual</a>'s <a href='http://blog.indextank.com/546/contest-time-build-an-app-with-indextank-factual/'>contest</a>. The task was "hacking up an application that uses both IndexTank real-time custom search API and Factual’s dataset of 14M US businesses."
+            </p>
+            <p>
+                Building <strong>Routine</strong> in such a short timespan was very interesting. It is impressive to see how much one can accomplish in one week using readily available tools; as a developer it is quite nice to be able to rely in such tools and concentrate in the application itself. In this page I would like to give an overview on the technologies and resources involved in creating this app.
+            </p>
+            <p>
+                For UI presentation I used the <a href='http://atatonic.timbenniks.nl/'>Atatonic CSS Framework</a>, which made it very easy to work with a grid and have a nice looking page from the start. I changed the default font size and typeface because I prefer big letters and a sans-serif typeface for web apps.
+            </p>
+            <p>
+                For UI behaviour I used <a href='http://jquery.com/'>JQuery</a>, which has been my javascript library of choice since I started on web development. The side-scrolling interface was made with <a href='http://flowplayer.org/tools/index.html'>JQuery Tools</a> and for the facebookish window that shows the itinerary's detail I used <a href='http://defunkt.io/facebox/'>Facebox</a>.
+            </p>
+            <p>
+                On the backend I used <a href='http://www.cherrypy.org/'>CherryPy</a> as web framework. It really only performs two tasks: searching for businesses and sorting them in an efficient route.
+            </p>
+            <p>
+                The search is performed by <a href='http://indextank.com'>Indextank</a>. The service is absolutely great, and I got the hang of it quite quickly. At first it striked me as a little slow, but when I deployed the app in my server I realized it was my ugly internet service. Now it is truly lightning fast! Besides, it was very easy to use and very well documented. I wholehertedly recommend it.
+            </p>
+            <p>
+                The businesses database came from <a href='http://www.factual.com'>Factual</a>. It is quite comprehensive and as it comes as a simple csv file, it was very easy to upload to Indextank with a simple script. Nonetheless, it would be cool if we could just upload the csv to Indextank and get it indexed automatically.
+            </p>
+            <p>
+                All the maps are powered by <a href='http://code.google.com/apis/maps/documentation/javascript/'>Google Maps' Javascript API</a>. It was easier to use than I expected, and the geocoding service works like a charm.
+            </p>
+            <p>Finally, I'd like to thank <a href='http://www.defaulticon.com/'>interactivemania</a>, from where I took the little cross icon and <a href='http://www.wpzoom.com/wpzoom/new-freebie-wpzoom-developer-icon-set-154-free-icons/'>WPZOOM</a> from where I took the magnifying glass.</p>
+            <hr/>
+            <p class='align-right'>
+                Go back to <a href="index.html">the application</a>.
+            </p>
+        </div>
+    </div>
+</body>

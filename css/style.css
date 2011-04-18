@@ -1,0 +1,117 @@
+body{
+    font-size: 14px;
+    font-family: 'Bitstream Vera Sans', 'DejaVu Sans', 'Tahoma', sans-serif;
+}
+a{
+    color: #A40802;
+    text-decoration: none;
+}
+.zp-wrapper {
+    padding: 36px 0 0 0;
+}
+li.step{
+    color: #999;
+    padding: 0em 0 0em 1em;
+    border-left: 0.25em solid #666;
+}
+li.step a{
+    color: #A46862;
+}
+li.step h3{
+    color: #999;
+}
+li.active{
+    color: #000;
+    border-left: 0.25em solid #A40802;
+}
+li.active a{
+    color: #A40802;
+}
+li.active h3{
+    color: #000;
+}
+div.title{
+    text-align: center;
+}
+h3.welcome{
+    font-size: 14px;
+}
+div.footer{
+    font-size: 12px;
+    text-align: center;
+}
+div#interface{
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+label{
+    line-height: 29px;
+    width: 35%;
+}
+input.text{
+    width: 60%;
+}
+button{
+    height: 27px;
+    line-height: 27px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+div.map_canvas{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2em;
+}
+div.pages{
+    height: 600px;
+    position: absolute;
+    width: 20000em;
+}
+div.page{
+    float: left;
+    width: 649px;
+    padding-left: 30px;
+}
+button[disabled="disabled"]{
+    color: #888;
+}
+
+.align-right{
+    text-align: right;
+}
+
+h1 a{
+    color: #000;
+    text-decoration: none;
+}
+.map_canvas p{
+    margin-bottom: 5px;
+}
+input.loading-field{
+    background: #FFF url(../images/ajax-loader.gif) no-repeat 95% center;
+}
+li.astop img{
+    margin: 2px 0 0 0;
+    float: none;
+}
+p#thinking{
+    text-align: center;
+}
+p#thinking img{
+    margin: 0;
+    float: none;
+}
+
+p#print img{
+    vertical-align: middle;
+    float: none;
+    margin: 2px 5px;
+}
+#print_itinerary{
+    display: none;
+}
+li.it-stop p{
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+}
